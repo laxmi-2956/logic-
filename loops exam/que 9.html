@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,18 +9,32 @@
 </head>
 <body>
     <script>
-        let word = "programming";
-let vowelCount = 0;
- 
-for (let i = 0; i < word.length; i++) {
-    let currentChar = word[i];
-    if ('laxmi'.includes(currentChar)) {
-        vowelCount++;
+        function countVowels(str) {
+  var count = 0;
+  var vowels = ['a','e', 'i', 'o', 'u'];
+
+  for (var i = 0; i < str.length; i++) {
+    if (vowels.includes(str[i].toLowerCase())) {
+      count++;
     }
+  }
+
+  return count;
 }
- 
-console.log("Number of vowels:", vowelCount);
+
+
+const inputString = 'Hello, World!';
+console.log(countVowels(inputString));
+
+
     </script>
+
+
+
+
+
+
     
 </body>
 </html>
+
